@@ -6,6 +6,7 @@ const http = require("http").Server(app);
 const cors = require("cors");
 const socketIO = require("socket.io")(http, {
   cors: {
+    // если захотите чтобы к вам могли подключаться остальные - оставьте там "*" вместо адреса)
     origin: "http://localhost:5173",
   },
 });
